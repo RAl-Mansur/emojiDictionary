@@ -12,6 +12,7 @@
 		0D84E7461D6A68CB00B2BA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84E7441D6A68CB00B2BA81 /* Main.storyboard */; };
 		0D84E7481D6A68CB00B2BA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D84E7471D6A68CB00B2BA81 /* Assets.xcassets */; };
 		0D84E74B1D6A68CB00B2BA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84E7491D6A68CB00B2BA81 /* LaunchScreen.storyboard */; };
+		0DCB4A161D6D009C0042F806 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB4A151D6D009C0042F806 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0D84E7471D6A68CB00B2BA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D84E74A1D6A68CB00B2BA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D84E74C1D6A68CB00B2BA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DCB4A151D6D009C0042F806 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0D84E7471D6A68CB00B2BA81 /* Assets.xcassets */,
 				0D84E7491D6A68CB00B2BA81 /* LaunchScreen.storyboard */,
 				0D84E74C1D6A68CB00B2BA81 /* Info.plist */,
+				0DCB4A151D6D009C0042F806 /* DefinitionViewController.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D84E7431D6A68CB00B2BA81 /* ViewController.swift in Sources */,
+				0DCB4A161D6D009C0042F806 /* DefinitionViewController.swift in Sources */,
 				0D84E7411D6A68CB00B2BA81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				0D84E7511D6A68CB00B2BA81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
