@@ -62,18 +62,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-Lc-cKH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ua-bA-V7J">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KON-jI-IIp" firstAttribute="centerX" secondItem="j3D-zr-IKJ" secondAttribute="centerX" id="4dI-ar-UZO"/>
+                            <constraint firstItem="MtU-Lc-cKH" firstAttribute="centerX" secondItem="j3D-zr-IKJ" secondAttribute="centerX" id="7RW-1Z-egr"/>
+                            <constraint firstItem="5Ua-bA-V7J" firstAttribute="top" secondItem="MtU-Lc-cKH" secondAttribute="bottom" constant="20" id="AGD-5S-0vR"/>
+                            <constraint firstItem="5Ua-bA-V7J" firstAttribute="centerX" secondItem="j3D-zr-IKJ" secondAttribute="centerX" id="AUy-fY-kNP"/>
                             <constraint firstItem="KON-jI-IIp" firstAttribute="top" secondItem="MOD-Or-da1" secondAttribute="bottom" constant="40" id="EIa-sZ-jB3"/>
+                            <constraint firstItem="MtU-Lc-cKH" firstAttribute="top" secondItem="LId-8P-Uv7" secondAttribute="bottom" constant="20" id="REF-Ks-sAZ"/>
                             <constraint firstItem="LId-8P-Uv7" firstAttribute="centerX" secondItem="j3D-zr-IKJ" secondAttribute="centerX" id="mFv-Zb-gXF"/>
                             <constraint firstItem="LId-8P-Uv7" firstAttribute="top" secondItem="KON-jI-IIp" secondAttribute="bottom" constant="50" id="sSF-g9-zOX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="catLbl" destination="MtU-Lc-cKH" id="6za-Al-krA"/>
                         <outlet property="emojiLbl" destination="LId-8P-Uv7" id="idJ-vS-uYs"/>
                         <outlet property="emojiPic" destination="KON-jI-IIp" id="4or-db-Efd"/>
+                        <outlet property="yearLbl" destination="5Ua-bA-V7J" id="cJd-MI-iWg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R11-QH-itQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

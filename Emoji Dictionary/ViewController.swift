@@ -12,18 +12,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var emojiTV: UITableView!
     
-    var emojisArray = ["😀", "😬", "😁", "😂", "😃", "🤓"]
-    
+    var emojisArray: [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        emojisArray = makeEmojiArray()
+        
         emojiTV.dataSource = self
         emojiTV.delegate = self
-        
-        
-        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = emojisArray[indexPath.row]
+        cell.textLabel?.text = emojisArray[indexPath.row].stringEmoji
         return cell
     }
     
@@ -44,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defVC = segue.destination as! DefinitionViewController
-        defVC.emoji = sender as! String
+        defVC.emoji = sender as! Emoji
     }
     
     
@@ -53,6 +51,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 
+    
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.stringEmoji = "😎"
+        emoji1.birthYear = 2001
+        emoji1.category = "Smiley"
+        emoji1.definition = "A smiley face with sun glasses"
+        
+        let emoji2 = Emoji()
+        emoji2.stringEmoji = "😱"
+        emoji2.birthYear = 2011
+        emoji2.category = "Smiley"
+        emoji2.definition = "A scream face"
+        
+        let emoji3 = Emoji()
+        emoji3.stringEmoji = "💤"
+        emoji3.birthYear = 2111
+        emoji3.category = "Icon"
+        emoji3.definition = "Sleeping emoji"
+        
+        return [emoji1, emoji2, emoji3]
+    }
+    
 
 }
 

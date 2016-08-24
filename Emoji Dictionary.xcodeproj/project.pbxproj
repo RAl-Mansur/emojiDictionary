@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D8375711D6E207A005037E4 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8375701D6E207A005037E4 /* Emoji.swift */; };
 		0D84E7411D6A68CB00B2BA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84E7401D6A68CB00B2BA81 /* AppDelegate.swift */; };
 		0D84E7431D6A68CB00B2BA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84E7421D6A68CB00B2BA81 /* ViewController.swift */; };
 		0D84E7461D6A68CB00B2BA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D84E7441D6A68CB00B2BA81 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D8375701D6E207A005037E4 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		0D84E73D1D6A68CB00B2BA81 /* Emoji Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D84E7401D6A68CB00B2BA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D84E7421D6A68CB00B2BA81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0D84E7491D6A68CB00B2BA81 /* LaunchScreen.storyboard */,
 				0D84E74C1D6A68CB00B2BA81 /* Info.plist */,
 				0DCB4A151D6D009C0042F806 /* DefinitionViewController.swift */,
+				0D8375701D6E207A005037E4 /* Emoji.swift */,
 			);
 			path = "Emoji Dictionary";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				0D84E7431D6A68CB00B2BA81 /* ViewController.swift in Sources */,
 				0DCB4A161D6D009C0042F806 /* DefinitionViewController.swift in Sources */,
+				0D8375711D6E207A005037E4 /* Emoji.swift in Sources */,
 				0D84E7411D6A68CB00B2BA81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
